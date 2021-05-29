@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Booky</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="favourite">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="open_drawer">"Open Drawer</string>
+    <string name="close_drawer">"Close Drawer"</string>
+    <string name="jajajajaaja">jajajajaaja</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favourites_fragment">Favourites</string>
+    <string name="about_fragment">About fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="favourites">Favourites</string>
+    <string name="list_item">List Item</string>
+    <string name="icon">icon</string>
+    <string name="rating">Rating</string>
+</resources>

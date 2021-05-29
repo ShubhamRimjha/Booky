@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DescriptionActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carbonBlue">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/includeCV"
+                    layout="@layout/book_card_row_includable" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/cardview_light_background"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="About the book"
+                    android:textColor="@color/lgray" />
+
+
+                <TextView
+                    android:id="@+id/txtBookFullDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:padding="10dp"
+                    android:text="lorem ipsum"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnAddToFavourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:text="Add to favourites"
+            android:textColor="@color/carbonBlue"
+            android:textStyle="bold" />
+
+        <include layout="@layout/progress_bar_layout" />
+    </FrameLayout>
+</RelativeLayout>
